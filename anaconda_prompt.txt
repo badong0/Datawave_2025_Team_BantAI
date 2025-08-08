@@ -1,0 +1,33 @@
+conda create --name BantAI
+
+conda install -c conda-forge pyarrow
+
+# Core data manipulation and analysis
+conda install pandas numpy scipy
+
+# Machine learning
+conda install scikit-learn
+ 
+# Visualization
+conda install matplotlib seaborn
+
+# Statistical analysis
+conda install scipy statsmodels
+
+# Jupyter (optional, for interactive analysis)
+conda install jupyter notebook ipython
+
+# Interactive plotting (optional but recommended)
+pip install plotly
+
+# Advanced clustering and dimensionality reduction
+pip install umap-learn  # Alternative to PCA
+
+# Model interpretability (optional)
+pip install shap lime
+
+# Progress bars (optional)
+pip install tqdm
+
+#download geopy
+conda install -c conda-forge geopy
