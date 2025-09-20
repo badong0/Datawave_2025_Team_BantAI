@@ -1,4 +1,4 @@
-conda create --name BantAI
+conda create --name BantAI python=3.10
 
 conda install -c conda-forge pyarrow
 
@@ -31,3 +31,24 @@ pip install tqdm
 
 #download geopy
 conda install -c conda-forge geopy
+
+# pip installs
+conda activate BantAI
+
+# install joblib
+pip install joblib
+
+# install pandas
+conda install pandas
+
+# install scikit-learn
+conda install scikit-learn
+
+# install geopy
+conda install -c conda-forge geopy
+
+# install matplotlib
+conda install matplotlib
+
+# install seaborn
+conda install seaborn
