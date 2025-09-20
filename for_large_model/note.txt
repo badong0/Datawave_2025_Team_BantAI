@@ -1,0 +1,25 @@
+Due to the training, this pkl result is from the initial raw training phase. It will be reduced and optimized as the pkl is enhanced
+
+for production use.
+
+
+
+note!!!!
+
+paste this on the training part of the code to adjust if wanted to reduce the estimators
+
+# Reduce model complexity
+clf = RandomForestClassifier(
+    n_estimators=50,  # Instead of 200
+    max_depth=10,     # Limit tree depth
+    random_state=42
+)
+
+# Use pickle instead of joblib
+import pickle
+with open('bantai_model_optimized.pkl', 'wb') as f:
+    pickle.dump({
+        "model": clf, 
+        "scaler": self.scaler, 
+        "features": self.ml_feature_columns
+    }, f)
